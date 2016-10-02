@@ -1,7 +1,7 @@
 .wrap {
 	width:100%;
 	max-width:320px;
-	margin:33% auto 0;
+	margin:33vh auto 0;
 	vertical-align:center;
 	position:relative;
 	z-index:1;
@@ -57,4 +57,10 @@ ul {
 	padding:0;
 	margin:0;
 	list-style:none;
+}
+
+@media(max-width:400px) {
+	.wrap {
+		margin-top:20px;
+	}
 }
