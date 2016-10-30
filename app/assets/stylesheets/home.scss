@@ -47,6 +47,29 @@ ul {
 	list-style:none;
 }
 
+.post-list,
+.post-list-title {
+	text-align:center;
+}
+.post-list-title {
+	color:$off-white;
+	margin:$padding auto 5px;
+}
+.post-list {
+	li {
+		font-size:$font-size-small;
+		line-height:1.35;
+		display:block;
+		color:$off-white;
+
+		a {
+			color:inherit;
+			text-decoration:underline;
+		}
+
+	}
+}
+
 @media(max-width:400px) {
 	.wrap {
 		margin-top:$padding;

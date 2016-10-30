@@ -1,0 +1,18 @@
+<meta name="description" content="<%= social_get_desc %>">
+<meta name="robots" content="index, follow" />
+<!-- Facebook Open Graph -->
+<meta property="og:url" content="<%= social_get_url %>">
+<meta property="og:title" content="<%= social_get_title %>">
+<meta property="og:site_name" content="<%= t(:site_name) %>">
+<meta property="og:description" content="<%= social_get_desc %>">
+<meta property="og:type" content="<%= social_get_type %>">
+<%= social_get_img('property','og') %>
+
+<!-- Twitter Card Meta -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@blendermarket">
+<meta name="twitter:site" content="@blendermarket">
+<meta name="twitter:title" content="<%= social_get_title %>">
+<meta name="twitter:description" content="<%= social_get_desc %>">
+<meta name="twitter:domain" content="<%= social_get_url %>">
+<%= social_get_img('name','twitter') %>

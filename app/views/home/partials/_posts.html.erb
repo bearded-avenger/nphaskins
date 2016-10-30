@@ -1,0 +1,6 @@
+<h5 class="post-list-title">Latest Ramblings</h5>
+<ul class="post-list">
+	<% @posts.each do |p| %>
+		<li><%= link_to p.title, post_path(p) %></li>
+	<% end %>
+</ul>

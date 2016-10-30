@@ -1,6 +1,6 @@
 .navigation {
 	background:#333;
-	color:#f8f8f8;
+	color:$off-white;
 	position:fixed;
 	z-index:2;
 	top:0;
@@ -12,9 +12,9 @@
 
 		a {
 			padding:10px;
-			color:#f8f8f8;
+			color:$off-white;
 			font-weight:normal;
-			font-size:14px;
+			font-size:$font-size-small;
 		}
 	}
 }
