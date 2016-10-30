@@ -1,3 +1,9 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+article {
+	max-width:700px;
+	margin:40px auto;
+
+	header {
+		text-align:center;
+		margin-bottom:20px;
+	}
+}
