@@ -31,6 +31,8 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 
 gem 'simple_form'
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
+gem 'devise'
+gem 'friendly_id', '~> 5.1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -39,7 +41,6 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'sqlite3'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
