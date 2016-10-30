@@ -12,16 +12,7 @@
 	@extend .white-back;
 }
 
-.avatar {
-	border-radius:100%;
-	max-width:100px;
-	border:1px solid rgba(0,0,0,0.15);
-	box-shadow:1px 1px 1px rgba(0,0,0,0.15);
-	margin:0 auto $padding;
-}
-
 .bg-img {
-	background-image:url(https://s3-us-west-2.amazonaws.com/nphaskins/bg.JPG);
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center center;

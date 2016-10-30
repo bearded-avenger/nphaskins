@@ -8,5 +8,14 @@
 		<%= @post.content %>
 		<br /><%= link_to 'Edit', edit_post_path(@post) if user_signed_in? %>
 	</article>
+	<div class="media author-box">
+	  <div class="media-left">
+	    <%= image_tag 'https://placekitten.com/100/100', class:'media-object avatar' %>
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading">Nick Haskins</h4>
+	    <p>Pimpin' pixels since 2008. Built and sold a WordPress based business. Now writes with Ruby on Rails. Lead dev at <%= link_to 'CC Cookie', 'https://cgcookie.com' %>.</p>
+	  </div>
+	</div>
 </div>
-<div class="bg-img"></div>
+<div class="bg-img" style="background-image:url(<%= @post.image_data unless @post.image_data.nil? %>);"></div>

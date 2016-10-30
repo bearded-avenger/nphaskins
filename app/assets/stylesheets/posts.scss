@@ -1,6 +1,13 @@
-article {
+article,
+.author-box {
 	max-width:700px;
-	margin:$padding-lg auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+article {
+	margin-top:$padding-lg;
+	margin-bottom:$padding;
 	@extend .white-back;
 
 	header {
@@ -11,6 +18,14 @@ article {
 			font-size:$font-size-small;
 			font-style:italic;
 		}
+	}
+}
+
+.author-box {
+	color:#f8f8f8;
+
+	a {
+		color:#f8f8f8;
 	}
 }
 
