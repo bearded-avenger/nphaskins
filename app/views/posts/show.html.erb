@@ -2,12 +2,11 @@
 
 	<article>
 		<header>
-			<h1><%= @post.title %></h1>
+			<h2><%= @post.title %></h2>
 			<p><time pubdate datetime="<%= @post.created_at %>"><%= time_ago_in_words(@post.created_at) %> ago</time></p>
 		</header>
 		<%= @post.content %>
+		<br /><%= link_to 'Edit', edit_post_path(@post) if user_signed_in? %>
 	</article>
-
-	<%= link_to 'Edit', edit_post_path(@post) if user_signed_in? %>
 </div>
 <div class="bg-img"></div>

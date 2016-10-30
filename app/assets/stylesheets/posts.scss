@@ -1,11 +1,16 @@
 article {
 	max-width:700px;
-	margin:40px auto;
+	margin:$padding-lg auto;
 	@extend .white-back;
 
 	header {
 		text-align:center;
-		margin-bottom:20px;
+		margin-bottom:$padding;
+
+		h2 + p {
+			font-size:$font-size-small;
+			font-style:italic;
+		}
 	}
 }
 
