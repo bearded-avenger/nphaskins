@@ -1,10 +1,12 @@
-<div class="container">
-	<ul>
-		<% if user_signed_in? %>
-		  <li><%= link_to 'New Post', new_post_path %></li>
-		  <li><%= link_to 'Log out', destroy_user_session_path, :method => :delete %></li>
-		<% else %>
-			<li><%= link_to 'Login', new_user_session_path %></li>
-		<% end %>
-	</ul>
+<div class="navigation">
+	<div class="container">
+		<ul>
+			<% if user_signed_in? %>
+			  <li><%= link_to 'New Post', new_post_path %></li>
+			  <li><%= link_to 'Log out', destroy_user_session_path, :method => :delete %></li>
+			<% else %>
+				<li><%= link_to 'Login', new_user_session_path %></li>
+			<% end %>
+		</ul>
+	</div>
 </div>
