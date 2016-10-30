@@ -1,6 +1,11 @@
 .navigation {
 	background:#333;
 	color:#f8f8f8;
+	position:fixed;
+	z-index:2;
+	top:0;
+	left:0;
+	width:100%;
 
 	li {
 		display:inline-block;

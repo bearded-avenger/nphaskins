@@ -10,7 +10,7 @@
   </head>
 
   <body>
-  	<%= render 'partials/navigation' %>
+  	<%= render 'partials/navigation' if user_signed_in? %>
   	<%= render 'partials/errors' %>
     <%= yield %>
   </body>
