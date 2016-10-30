@@ -5,16 +5,16 @@
 			<h2><%= @post.title %></h2>
 			<p><time pubdate datetime="<%= @post.created_at %>"><%= time_ago_in_words(@post.created_at) %> ago</time></p>
 		</header>
-		<%= @post.content %>
-		<br /><%= link_to 'Edit', edit_post_path(@post) if user_signed_in? %>
+		<%= raw @post.content %>
+		<%= link_to 'Edit', edit_post_path(@post) if user_signed_in? %>
 	</article>
 	<div class="media author-box">
 	  <div class="media-left">
-	    <%= image_tag 'https://placekitten.com/100/100', class:'media-object avatar' %>
+	    <%= image_tag 'https://en.gravatar.com/userimage/4579125/3b06d543f5d0233f505d7cdb1f74c2e2.jpg', class:'media-object avatar' %>
 	  </div>
 	  <div class="media-body">
 	    <h4 class="media-heading">Nick Haskins</h4>
-	    <p>Pimpin' pixels since 2008. Built and sold a WordPress based business. Now writes with Ruby on Rails. Lead dev at <%= link_to 'CC Cookie', 'https://cgcookie.com' %>.</p>
+	    <p>Pimpin' pixels since 2008. Built and sold a WordPress based business. <br />Now writes with Ruby on Rails. Lead dev at <%= link_to 'CC Cookie', 'https://cgcookie.com' %>.</p>
 	  </div>
 	</div>
 </div>

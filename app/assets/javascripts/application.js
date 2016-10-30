@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require froala_editor.min.js
+$(document).on('turbolinks:load', function () {
+	$('.editable').froalaEditor({
+		height: '500',
+		toolbarButtons: ['fontSize', 'insertLink', 'bold', 'italic', 'formatOL', 'formatUL']
+	})
+});
